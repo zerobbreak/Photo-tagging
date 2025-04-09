@@ -1,5 +1,5 @@
-import type { Route } from "./+types/home";
-import Welcome from "~/welcome/welcome";
+import type { Route } from "./+types/_index";
+
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -7,6 +7,10 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  <Welcome/>
+const Home = () => {
+  return (
+    <div>Home</div>
+  )
 }
+
+export default Home
